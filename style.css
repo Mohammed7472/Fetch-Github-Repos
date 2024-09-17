@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.app-container {
+  width: 800px;
+  margin: 20px auto;
+  background-color: #f6f6f6;
+}
+.app-container .get-repos {
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+  background-color: #eee;
+}
+.app-container .get-repos input {
+  flex: 1;
+  padding: 15px 20px;
+  height: 54px;
+  border: none;
+  font-size: 18px;
+}
+.app-container .get-repos input:focus {
+  outline: 2px solid #ff5722;
+}
+.app-container .get-repos .btn {
+  background-color: #ff5722;
+  color: #fff;
+  width: 120px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.app-container .data-box {
+  padding: 20px;
+}
+.data-box .repo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 20px;
+}
+.data-box .repo:not(:last-of-type) {
+  margin-bottom: 7px;
+}
+.data-box .info span,
+.data-box .info a {
+  display: inline-block;
+  width: 100px;
+  color: #fff;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.data-box .info .stars {
+  background-color: #009688;
+}
+.data-box .info a {
+  text-decoration: none;
+  background-color: #e91e63;
+  user-select: none;
+}
